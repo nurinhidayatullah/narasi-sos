@@ -102,7 +102,7 @@ export default defineNuxtConfig({
     },
     workboxOptions: {
       exclude: ['narasi-sos.vercel.app/200']
-    }
+    },
     devOptions: {
       enabled: true,
       suppressWarnings: true,
