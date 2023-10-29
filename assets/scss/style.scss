@@ -1,0 +1,37 @@
+/**************************************************************
+	
+	STYLESHEET INDEXING
+	|
+	|___ Default Styles
+	|	|___ variables
+	|	|___ mixins
+	|	|___ reset
+	|	|___ typography
+	|	|___ animations
+	|	|___ shortcode
+	|
+	|
+	|
+	|___ END STYLE SHEET INDEXING
+
+***************************************************************/
+
+/*===================================
+    Default Styles
+====================================*/
+@import 'default/variables';
+@import 'default/mixins';
+@import 'default/reset';
+@import 'default/typography';
+@import 'default/shortcode';
+@import 'default/spacing';
+@import '../css/fontawesome.min.css';
+
+/*=================================
+	Template Styles
+==================================*/
+@import 'template/header';
+@import 'template/hamber-menu';
+@import 'template/sidebar-mobilemenu';
+@import 'template/accordion';
+@import 'template/footer';

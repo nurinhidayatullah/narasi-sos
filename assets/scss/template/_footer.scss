@@ -1,0 +1,39 @@
+/*========================
+ * Footer
+=========================================*/
+
+.footer-container {
+  background-color: $dark-color;
+  padding: 24px 128px 44px 128px;
+  background-image: url("/img/background/timeline.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  nav {
+    color: $grey;
+
+    ul {
+      li {
+        font-size: 14px;
+        &:first-child {
+          padding-bottom: 16px;
+          font-weight: 800;
+        }
+
+        &:not(:first-child) {
+          padding: 8px 0;
+          cursor: pointer;
+          font-weight: 600;
+          .d-flex {
+            i {
+              text-align: center;
+              width: 24px;
+              font-size: 18px;
+              margin-right: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

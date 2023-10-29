@@ -1,0 +1,215 @@
+/*============================
+    Accordion Area 
+==============================*/
+
+.bk-accordion {
+  border-top: 2px solid $secondary-color;
+  .card {
+    border: 0 none;
+    border-bottom: 2px solid $secondary-color;
+    // margin-bottom: 30px;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-color: transparent;
+    border-radius: 0px 0px 0 0;
+  }
+  .card-header {
+    position: relative;
+    background: transparent;
+    padding: 0;
+    border: 0 none;
+    // border-bottom: 1px solid $secondary-color;
+    .accordion-button:not(.collapsed) {
+        box-shadow: none;
+    }
+    .acc-btn {
+      color: $secondary-color;
+      font-size: 24px;
+      line-height: 1.2;
+      font-weight: 800;
+      font-family: $body-font;
+      -webkit-appearance: none;
+      display: block;
+      background: transparent;
+      padding: 12px 0px;
+      margin: -1px -1px 0;
+
+      position: relative;
+      text-align: left;
+      //
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-family: $fontAwesome;
+        font-weight: 900;
+        content: "\f078";
+        right: 0px;
+        font-size: 32px;
+      }
+
+      &[aria-expanded="true"] {
+        // background: $theme-color;
+        // color: #ffffff;
+        &::before {
+          content: "\f077";
+        }
+      }
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+  .accordion-body {
+    padding: 8px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #6d6f72;
+    line-height: 24px;
+  }
+  .card-body {
+    padding: 24px 25px 39px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    font-size: 14px;
+    font-family: $body-font;
+    border: 0 none;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.07);
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+/* Accordion Style 02 */
+
+.bk-accordion-style--2 {
+    padding: 42px 0;
+  .card {
+    border: 1px solid #DFDFDF;
+    margin-bottom: 30px;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 16px 20px;
+  }
+  .card-header {
+    position: relative;
+    background: transparent;
+    padding: 0;
+    border: none !important;
+    .accordion-button {
+        padding: 0;
+        // padding-bottom: 16px;
+        padding-right: 28px;
+        &:not(.collapsed) {
+            box-shadow: none;
+        }
+    }
+    .acc-btn {
+      color: #111;
+      font-size: 18px;
+      line-height: 1.2;
+      font-weight: 800;
+      font-family: $body-font;
+      -webkit-appearance: none;
+      display: block;
+      background: #fff;
+      margin: -1px -1px 0;
+      position: relative;
+      text-align: left;
+    //   border-radius: 8px;
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-family: $fontAwesome;
+        font-weight: 900;
+        content: "\f067";
+        right: 0px;
+        font-size: 20px;
+      }
+
+      &[aria-expanded="true"] {
+        &::before {
+            content: "\f068";
+        }
+      }
+      &:focus {
+        outline: none;
+        border: none;
+        box-shadow: none;
+      }
+    }
+  }
+  .accordion-body {
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 16px;
+  }
+  .card-body {
+    padding: 0;
+    font-weight: 500;
+    letter-spacing: 0em;
+    font-size: 14px;
+    font-family: $body-font;
+    border: 0 none;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.07);
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+.faq-content {
+  // Responsive
+  @media #{$md-layout} {
+    margin-bottom: 50px;
+  }
+  @media #{$sm-layout} {
+    margin-bottom: 50px;
+  }
+  h2 {
+    font-size: 50px;
+    line-height: 65px;
+    font-weight: 600;
+    color: $theme-color;
+    margin-bottom: 30px;
+    // Responsive
+    @media #{$lg-layout} {
+      font-size: 40px;
+      line-height: 50px;
+    }
+    @media #{$md-layout} {
+      font-size: 40px;
+      line-height: 50px;
+    }
+    @media #{$sm-layout} {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+  p {
+    font-size: 18px;
+    line-height: 34px;
+    font-weight: 400;
+    font-family: $body-font;
+    max-width: 460px;
+    // Responsive
+    @media #{$lg-layout} {
+      font-size: 16px;
+      line-height: 28px;
+    }
+    @media #{$md-layout} {
+      font-size: 16px;
+      line-height: 28px;
+    }
+    @media #{$sm-layout} {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}
