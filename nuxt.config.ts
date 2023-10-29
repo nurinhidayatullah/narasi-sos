@@ -95,11 +95,10 @@ export default defineNuxtConfig({
       ],
     },
     workbox: {
-      navigateFallbackAllowlist: [/^\/$/],
-      navigateFallback: 'index.html',
+      navigateFallback: null,
       clientsClaim: true,
       skipWaiting: true,
-      globPatterns: ['**/*.{js,css,scss,html,png,svg,webp,ico,json,woff2,woff,ttf}'],
+      globPatterns: ['**/*.{js,css,scss,html,png,svg,webp,ico,json,woff2,woff,ttf,200,br,gz}'],
     },
     devOptions: {
       enabled: true,
