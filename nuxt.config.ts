@@ -63,7 +63,6 @@ export default defineNuxtConfig({
       "apple-touch-icon.png",
       "robots.txt",
     ],
-    registerWebManifestInRouteRules: true,
     injectRegister: "auto",
     registerType: 'autoUpdate',
     manifest: {
@@ -97,6 +96,7 @@ export default defineNuxtConfig({
     },
     workbox: {
       navigateFallbackAllowlist: [/^\/$/],
+      navigateFallback: 'index.html',
       clientsClaim: true,
       skipWaiting: true,
       globPatterns: ['**/*.{js,css,scss,html,png,svg,webp,ico,json,woff2,woff,ttf}'],
