@@ -97,8 +97,10 @@ export default defineNuxtConfig({
     },
     workbox: {
       navigateFallback: null,
+      clientsClaim: true,
+      skipWaiting: true,
       globPatterns: ['**/*.{js,css,scss,html,png,svg,webp,ico,json,woff2,woff,ttf}'],
-      globIgnores: ['manifest**.webmanifest'],
+      exclude:[/200/]
     },
     devOptions: {
       enabled: true,
