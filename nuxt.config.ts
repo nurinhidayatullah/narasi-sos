@@ -101,9 +101,6 @@ export default defineNuxtConfig({
       skipWaiting: true,
       globPatterns: ['**/*.{js,css,scss,html,png,svg,webp,ico,json,woff2,woff,ttf,200,br,gz}'],
     },
-    workboxOptions: {
-      exclude: ['200'],
-    },
     devOptions: {
       enabled: true,
       suppressWarnings: true,
