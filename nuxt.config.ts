@@ -45,8 +45,13 @@ export default defineNuxtConfig({
   },
   nitro: {
     compressPublicAssets: true,
+    esbuild: {
+      options: {
+        target: 'esnext',
+      },
+    },
     prerender: {
-      crawlLinks: true
+      crawlLinks: true,
     }
   },
   modules: [
@@ -58,6 +63,7 @@ export default defineNuxtConfig({
       "apple-touch-icon.png",
       "robots.txt",
     ],
+    registerWebManifestInRouteRules: true,
     injectRegister: "auto",
     registerType: 'autoUpdate',
     manifest: {
@@ -98,6 +104,16 @@ export default defineNuxtConfig({
       suppressWarnings: true,
       navigateFallbackAllowlist: [/^\/$/],
       type: 'module',
+    },
+    routeRules: {
+      // Static generation
+      '/': { prerender: true },
+      '/manifest.webmanifest': {
+        headers: {
+          'Content-Type': 'application/manifest+json',
+          'Cache-Control': 'public, max-age=0, must-revalidate',
+        },
+      },
     },
   },
 })
