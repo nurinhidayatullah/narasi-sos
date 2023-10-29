@@ -98,9 +98,7 @@ export default defineNuxtConfig({
     workbox: {
       navigateFallback: null,
       globPatterns: ['**/*.{js,css,scss,html,png,svg,webp,ico,json,woff2,woff,ttf}'],
-    },
-    workboxOptions: {
-      exclude: ['narasi-sos.vercel.app/200']
+      globIgnores: ['manifest**.webmanifest'],
     },
     devOptions: {
       enabled: true,
