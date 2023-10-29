@@ -53,6 +53,12 @@ export default defineNuxtConfig({
     '@vite-pwa/nuxt'
   ],
   pwa: {
+    includeAssets: [
+      "favicon.ico",
+      "apple-touch-icon.png",
+      "robots.txt",
+    ],
+    injectRegister: "auto",
     registerType: 'autoUpdate',
     manifest: {
       name: 'Indosat X Narasi',
@@ -84,7 +90,7 @@ export default defineNuxtConfig({
       ],
     },
     workbox: {
-      navigateFallback: '/',
+      navigateFallback: null,
       globPatterns: ['**/*.{js,css,scss,html,png,svg,webp,ico,json,woff2,woff,ttf}'],
     },
     devOptions: {
