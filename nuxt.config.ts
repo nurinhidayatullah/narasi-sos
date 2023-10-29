@@ -96,10 +96,13 @@ export default defineNuxtConfig({
     },
     workbox: {
       navigateFallback: null,
-      navigateFallbackDenylist: [/^\/200.html/],
+      navigateFallbackDenylist: [/^\/200/],
       clientsClaim: true,
       skipWaiting: true,
       globPatterns: ['**/*.{js,css,scss,html,png,svg,webp,ico,json,woff2,woff,ttf,200,br,gz}'],
+    },
+    workboxOptions: {
+      exclude: ['200'],
     },
     devOptions: {
       enabled: true,
