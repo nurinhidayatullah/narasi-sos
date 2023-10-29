@@ -97,7 +97,6 @@ export default defineNuxtConfig({
     },
     workbox: {
       navigateFallback: null,
-      mode
       globPatterns: ['**/*.{js,css,scss,html,png,svg,webp,ico,json,woff2,woff,ttf}'],
     },
     workboxOptions: {
