@@ -18,9 +18,9 @@
             </h5>
           </div>
           <div class="d-flex justify-content-center align-items-center mt-3">
-            <button class="btn button-custom-primary mx-sm-3"><nuxt-link target="_blank" href="https://digitalnarasi.typeform.com/indosatsos">DAFTAR</nuxt-link></button>
-            <button class="btn button-custom-secondary lg-btn-view"><nuxt-link to="#information-component">JELAJAHI SELENGKAPNYA</nuxt-link></button>
-            <button class="btn button-custom-secondary sm-btn-view"><nuxt-link to="#information-component">SELENGKAPNYA</nuxt-link></button>
+            <nuxt-link class="btn button-custom-primary mx-sm-3" target="_blank" href="https://digitalnarasi.typeform.com/indosatsos">DAFTAR</nuxt-link>
+            <nuxt-link to="#information-component" class="btn button-custom-secondary lg-btn-view">JELAJAHI SELENGKAPNYA</nuxt-link>
+            <nuxt-link to="#information-component" class="btn button-custom-secondary sm-btn-view">SELENGKAPNYA</nuxt-link>
           </div>
         </div>
         <div class="timeline-distort"></div>
