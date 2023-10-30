@@ -106,14 +106,14 @@ export default defineNuxtConfig({
       navigateFallbackAllowlist: [/^\/$/],
       type: 'module',
     },
-    routeRules: {
-      // Static generation
-      '/': { prerender: true },
-      '/manifest.webmanifest': {
-        headers: {
-          'Content-Type': 'application/manifest+json',
-          'Cache-Control': 'public, max-age=0, must-revalidate',
-        },
+  },
+  routeRules: {
+    // Static generation
+    '/': { prerender: true },
+    '/manifest.webmanifest': {
+      headers: {
+        'Content-Type': 'application/manifest+json',
+        'Cache-Control': 'public, max-age=0, must-revalidate',
       },
     },
   },

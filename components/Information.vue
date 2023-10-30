@@ -19,43 +19,40 @@
     </div>
     <div class="col-lg-6">
       <div class="bg-information"></div>
+      <img loading="lazy" class="sm-view" src="/img/content/informasi.webp" alt="">
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 .bg-information {
-  height: 768px;
+  height: 51vw;
   width: 150%;
   background-image: url("/img/content/informasi.webp");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
+.sm-view {
+  display: none;
+}
 @media #{$md-layout} {
   .bg-information {
-    width: 100%;
-    height: 600px !important;
+    display: none;
   }
 
   .container {
     padding: 0 !important;
   }
-}
 
-@media #{$sm-layout} {
-  .bg-information {
-    width: 100% !important;
-    height: 288px !important;
+  .sm-view {
+    display: block;
   }
 }
+
 @media only screen and (max-width: 1025px) {
   .container {
     padding: 0 20px 0 20px;
-  }
-  .bg-information {
-    width: 120%;
-    height: 500px;
   }
 }
 </style>
