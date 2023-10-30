@@ -43,9 +43,7 @@
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
-        font-family: $fontAwesome;
-        font-weight: 900;
-        content: "\f078";
+        content:  url('/img/icons/chevron-down.svg');
         right: 0px;
         font-size: 32px;
       }
@@ -54,7 +52,7 @@
         // background: $theme-color;
         // color: #ffffff;
         &::before {
-          content: "\f077";
+          content: url('/img/icons/chevron-up.svg');
         }
       }
       &:focus {
@@ -126,16 +124,14 @@
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
-        font-family: $fontAwesome;
-        font-weight: 900;
-        content: "\f067";
+        content: url('/img/icons/plus.svg');
         right: 0px;
         font-size: 20px;
       }
 
       &[aria-expanded="true"] {
         &::before {
-            content: "\f068";
+            content: url('/img/icons/minus.svg');
         }
       }
       &:focus {
