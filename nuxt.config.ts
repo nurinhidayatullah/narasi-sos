@@ -63,7 +63,6 @@ export default defineNuxtConfig({
       "apple-touch-icon.png",
       "robots.txt",
     ],
-    injectRegister: "auto",
     registerType: 'autoUpdate',
     manifest: {
       name: 'Indosat X Narasi',
