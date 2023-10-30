@@ -249,7 +249,7 @@
 
 
 .button-custom-primary {
-    color: white;
+    color: white !important;
     background-color: $danger;
     padding: 12px 24px;
     border-radius: 50px;
@@ -261,15 +261,15 @@
 }
 
 .button-custom-secondary {
-    color: $secondary-color;
-    border-color: $secondary-color;
+    color: $secondary-color !important;
+    border-color: $secondary-color !important;
     padding: 12px 24px;
     border-radius: 50px;
     font-weight: 600;
     &:hover {
         border: none;
         background-color: $secondary-color;
-        color: white;
+        color: white !important;
     }
 }
 
